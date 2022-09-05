@@ -2,7 +2,8 @@
 ¹ orange:e2a355
 ² orange clean;deb37e   
 ³ gray; 7f7770 
-  gray; 68635f
+  dark-gray; 68635f
+  light-gray; c3bfbc
 */ 
 
 
@@ -15,20 +16,20 @@ body{
 }
 /* header styles */
 
-
+/*_________________________________________________________________________________________________________________________________*/
 
 /* barra de busca e borda do pesquisar */
 .searchbar{
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
-    background-color: #7f7770;
+    background-color: #c3bfbc;
     border-radius: 30px;
     padding: 10px;
     color: rgb(230, 216, 216);
     }
-
-
+   
+/*_________________________________________________________________________________________________________________________________*/
     
     .search_input{
     color: rgb(255, 255, 255);
@@ -41,19 +42,29 @@ body{
     transition: width 0.5s linear;
     }
 
+
+/*_________________________________________________________________________________________________________________________________*/
+
     .searchbar:hover > .search_input{
     padding: 0 10px;
     border-radius: 15px;
     width: 250px;
     caret-color:rgb(255, 255, 255);
     transition: width 0.35s linear;
-    background-color: rgb(0, 0, 0);
+    background-color: #c3bfbc
     }
 
+
+/*_________________________________________________________________________________________________________________________________*/
+
     .searchbar:hover > .search_icon{
-    background: rgb(255, 255, 255);
-    color: rgb(26, 26, 26);
+    background:white;
+    color: #e2a355;
     }
+
+
+/*_________________________________________________________________________________________________________________________________*/
+
 
     .search_icon{
     height: 40px;
@@ -63,12 +74,12 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:rgb(233, 227, 227);
+    color: #68635f;
     text-decoration:none;
     }
     /*///// header styles /////*/
 
-
+/*_________________________________________________________________________________________________________________________________*/
 
 
 /*Celular e tables */
