@@ -15,7 +15,15 @@ body{
 }
 /*_________________________________________________________________________________________________________________________________*/
 .bg-papel-bottom{
+    height:180px;
     background-image:url('../imagens/grupo1-bg-rasgado-branco-botoom.png');
+    background-size: 100%;
+    background-position: 0 50px;
+    background-repeat: no-repeat;  
+}
+
+.logo{
+    height: 80px;
 }
 
 /*_________________________________________________________________________________________________________________________________*/
