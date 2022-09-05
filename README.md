@@ -78,5 +78,45 @@ https://bootsnipp.com/snippets/GaeQR
     text-decoration:none;
     }
 
+7.1 adicionando menu
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
+              <a class="nav-link" href="#">BORA LÁ</a>
+            </li>
 
 
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR STORY</a>
+              <a class="nav-link" href="#">PROMOÇÃO</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="#">EXPLORAR</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTATO</a>
+            </li>
+
+          </ul>
+
+
+7.2 adicionando me-3 dentro da class 
+exe: <li class="nav-item me-3">
+
+
+7.3 acrescentando fw-bold(negrito) nas classes.
+
+exe:  <a class="nav-link active fw-bold" href="#" aria-current="page">HOME<span
+
+ <a class="nav-link fw-bold " href="#">BORA LÁ</a>
+
+ <a class="nav-link fw-bold " href="#">PROMOÇÃO</a>
+
+  <a class="nav-link fw-bold " href="#">EXPLORAR</a>
+
+  <a class="nav-link fw-bold " href="#">CONTATO</a>
+
+  7.4
