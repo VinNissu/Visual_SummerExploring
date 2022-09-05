@@ -78,7 +78,7 @@ https://bootsnipp.com/snippets/GaeQR
     text-decoration:none;
     }
 
-7.1 adicionando menu
+7.1 adicionando menu html
             <li class="nav-item">
               <a class="nav-link" href="#">MENU</a>
               <a class="nav-link" href="#">BORA LÁ</a>
@@ -103,7 +103,7 @@ https://bootsnipp.com/snippets/GaeQR
           </ul>
 
 
-7.2 adicionando me-3 dentro da class 
+7.2 adicionando me-3 dentro da class
 exe: <li class="nav-item me-3">
 
 
@@ -119,4 +119,9 @@ exe:  <a class="nav-link active fw-bold" href="#" aria-current="page">HOME<span
 
   <a class="nav-link fw-bold " href="#">CONTATO</a>
 
-  7.4
+  7.4 criando bg-papel-bottom(rasgado em baixo)
+  <nav class="navbar navbar-expand-sm bg-papel-bottom">
+  
+.bg-papel-bottom{
+ background-image:url('');
+}
