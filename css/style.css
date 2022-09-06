@@ -109,6 +109,11 @@ body{
     background-color: #7f7770;
 }
 
+.bg-cinza-op5{
+    background-color: rgba(127, 119, 112, 0.50);
+}
+
+
 .bg-folhas-left{
     background-image:url('../imagens/grupo2-bg-sombra-folhagem.png');
     background-repeat: no-repeat;
