@@ -12,14 +12,20 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
+    background-color: #fff;
 }
 /*_________________________________________________________________________________________________________________________________*/
+
+
+
+
+
+
 .bg-papel-bottom{
     /* height:180px; */
     background-image:url('../imagens/bg-rasgado-branco-topo.png');
     background-size: 100%;
-    background-position: 0 -100px;
+    background-position: 0 -50px;
     background-repeat: no-repeat;
 }
 
@@ -27,9 +33,6 @@ body{
     height: 80px;
 }
 
-/*_________________________________________________________________________________________________________________________________*/
-/* header styles */
-/*_________________________________________________________________________________________________________________________________*/
 
 /* barra de busca e borda do pesquisar */
 .searchbar{
@@ -42,7 +45,6 @@ body{
     color: rgb(230, 216, 216);
     }
    
-/*_________________________________________________________________________________________________________________________________*/
     
     .search_input{
     color: rgb(255, 255, 255);
@@ -56,7 +58,6 @@ body{
     }
 
 
-/*_________________________________________________________________________________________________________________________________*/
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
@@ -68,15 +69,12 @@ body{
     }
 
 
-/*_________________________________________________________________________________________________________________________________*/
 
     .searchbar:hover > .search_icon{
     background:white;
     color: #e2a355;
     }
 
-
-/*_________________________________________________________________________________________________________________________________*/
 
 
     .search_icon{
@@ -94,16 +92,31 @@ body{
 
 /*_________________________________________________________________________________________________________________________________*/
 
+.txt-laranja{
+    color:#e2a355;
+}
+
+.txt-cinza{
+    color:#7f7770 ;
+}
+
+.bg-laranja{
+    background-color: #deb37e;
+
+}
+
+.bg-cinza{
+    background-color: #7f7770;
+}
+
+.bg-folhas-left{
+    background-image:url('../imagens/grupo2-bg-sombra-folhagem.png');
+    background-repeat: no-repeat;
+    background-position: -100px;
+}
 
 /*Celular e tables */
 @media screen and (max-width: 992px) {
-    body {
-      background-color: rgb(255, 255, 255);
-        }
-        .searchbar:hover > .search_input{
-            border-radius: 15px;
-            width: 25s0px;
-        }       
 
     
 }
