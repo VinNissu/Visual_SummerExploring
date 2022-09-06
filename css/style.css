@@ -12,14 +12,15 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
 /*_________________________________________________________________________________________________________________________________*/
 .bg-papel-bottom{
-    height:180px;
-    background-image:url('../imagens/grupo1-bg-rasgado-branco-botoom.png');
+    /* height:180px; */
+    background-image:url('../imagens/bg-rasgado-branco-topo.png');
     background-size: 100%;
-    background-position: 0 50px;
-    background-repeat: no-repeat;  
+    background-position: 0 -100px;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -102,6 +103,7 @@ body{
         .searchbar:hover > .search_input{
             border-radius: 15px;
             width: 25s0px;
- 
         }       
+
+    
 }

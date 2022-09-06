@@ -125,3 +125,21 @@ exe:  <a class="nav-link active fw-bold" href="#" aria-current="page">HOME<span
 .bg-papel-bottom{
  background-image:url('');
 }
+
+
+7.4
+<!-- tipos de breakpoint: 
+  xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px -->
+
+
+<!-- antes -->
+<!-- <main class= "col-10 offset-1"> -->
+
+<!-- depois -->
+<!-- (lg = de 992 pra cima )   -->
+<!-- tratamento para mobiles -->
