@@ -119,6 +119,9 @@ body{
     background-repeat: no-repeat;
     background-position: -100px;
 }
+.flip-x {
+    transform: scaleX(-1);
+}
 
 .promocao{}
 
