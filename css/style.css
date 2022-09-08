@@ -69,6 +69,12 @@ body{
     }
 
 
+    .expand-4:hover{
+    width: 30%;
+    color:#ff0;
+    transition:width 0.3s ease-out, color 1s ease-in-out !important;
+    }
+
 
     .searchbar:hover > .search_icon{
     background:white;
@@ -110,7 +116,7 @@ body{
 }
 
 .bg-cinza-op5{
-    background-color: rgba(127, 119, 112, 0.50);
+    background-color: rgba(90, 87, 84, 0.5);
 }
 
 
@@ -128,6 +134,8 @@ body{
 .altura-400px{
     height: 400px;
 }
+
+
 /* multiplos backgrounds */
 .bg-3{
     background-image: url('../imagens/bg-rasgado-branco-topo.png'), url('../imagens/bg-sombra-folhagem.png'), url('../imagens/bg-rasgado-branco-base.png');
@@ -138,7 +146,41 @@ body{
 
 /*_________________________________________________________________________________________________________________________________*/
 /*Celular e tables */
-@media screen and (max-width: 992px) {
-
-    
+@media screen and (max-width: 992px) {    
 }
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+    0% {
+        -webkit-transform: translateY(-100px);
+                transform: translateY(-100px);
+      }
+
+
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+  }
+  
