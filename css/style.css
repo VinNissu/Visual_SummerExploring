@@ -127,9 +127,9 @@ body{
 }
 /* multiplos backgrounds */
 .bg-3{
-    background-image: url('../imagens/bg-rasgado-branco-topo.png'), url('../imagens/grupo2-bg-sombra-folhagem.png'), url('../imagens/grupo1-bg-rasgado-branco-botoom.png');
+    background-image: url('../imagens/bg-rasgado-branco-topo.png'), url('../imagens/bg-sombra-folhagem.png'), url('../imagens/bg-rasgado-branco-base.png');
     background-repeat: no-repeat, no-repeat , no-repeat;
-    background-size: 100%,30%,100%;
+    background-size: 100%, 28%,100%;
     background-position: 0 -50px, 0 center, 0 320px;
 }
 
