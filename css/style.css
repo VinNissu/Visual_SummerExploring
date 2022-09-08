@@ -120,9 +120,12 @@ body{
     background-position: -100px;
 }
 
-.promocao{
+.promocao{}
+
+.altura-400px{
 
 }
+
 /*_________________________________________________________________________________________________________________________________*/
 /*Celular e tables */
 @media screen and (max-width: 992px) {
