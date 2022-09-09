@@ -372,12 +372,32 @@ xxl: 1400px -->
       </p>
 
       <form action="" method="POST" enctype="multipart/form-data" style="min-height: 400px;">
-      
-      <div class="mb-3">
-        <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro" >
-      </div>
-      
+
+        <div class="mb-3">
+          <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" name="email" id="email"
+            placeholder="digite um email válido, ex:abc@gmail.com">
+          <hr>
+        </div>
+
+        <fieldset class="border border-secondary p-3">
+          <legend>Sexo:</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="Masculino">
+            <label class="form-check-label" for="">Masculino</label>
+            <br>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Ferminino">
+            <label class="form-check-label" for="">Ferminino</label>
+          </div>
+
+        </fieldset>
+
       </form>
+
     </section>
 
 
