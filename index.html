@@ -35,7 +35,12 @@
 
 
   <!-- conectando css -->
+  <!-- biblioteca de animação aos  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- o meu css carrega por ultimo no head  -->
   <link rel="stylesheet" href="css/style.css">
+
 
 
 
@@ -70,26 +75,26 @@
 
 
             <!-- navegadores link  -->
-            <li class="nav-item me-3">
+            <li class="nav-item me-3"data-aos="zoom-in">
               <a class="nav-link active fw-bold" href="#" aria-current="page">HOME<span
                   class="visually-hidden">(current)</span></a>
             </li>
 
-            <li class="nav-item me-3 ">
-              <a class="nav-link fw-bold " href="#">BORA LÁ</a>
+            <li class="nav-item me-3" data-aos="zoom-in">
+              <a class="nav-link fw-bold" href="#">BORA LÁ</a>
             </li>
 
 
-            <li class="nav-item me-3 ">
+            <li class="nav-item me-3" data-aos="zoom-in">
               <a class="nav-link fw-bold " href="#">PROMOÇÃO</a>
             </li>
 
 
-            <li class="nav-item me-3 ">
+            <li class="nav-item me-3 "data-aos="zoom-in">
               <a class="nav-link fw-bold " href="#">EXPLORAR</a>
             </li>
 
-            <li class="nav-item me-3">
+            <li class="nav-item me-3"data-aos="zoom-in">
               <a class="nav-link fw-bold " href="#">CONTATO</a>
             </li>
 
@@ -156,27 +161,25 @@ xxl: 1400px -->
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img src="imagens/grupo1-banner-top-aventureira.jpg" class="w-100 d-block" alt="First slide">
+            <img src="imagens/banner-topo-aventureira-recortado.jpg " class="w-100 d-block kenburns-bottom" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Title</h3>
               <p>Description</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imagens/banner-topo-jeep.jpg" class="w-100 d-block" alt="Second slide">
+            <img src="imagens/banner-topo-jeep-recortado.jpg" class="w-100 d-block kenburns-bottom" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
               <h3>Title</h3>
               <p>Description</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imagens/banner-topo-montanha.jpg" class="w-100 d-block" alt="Third slide">
+            <img src="imagens/banner-topo-montanha-recortado.jpg" class="w-100 d-block kenburns-bottom" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
-
-
-
               <h3>Title</h3>
               <p>Description</p>
+
             </div>
           </div>
         </div>
@@ -210,8 +213,8 @@ xxl: 1400px -->
     <!-- colocando tamanho e cor fs-1 txt-laranja -->
     <!-- 8 -->
     <!-- criando uma classe  para a imagem class=" my-4 bg-folhas-left"> -->
-    <section id="bora" class=" my-4 bg-folhas-left">
-      <h2 class='text-center fw-bold text-uppercase fs-1 txt-laranja'>bora lá!</h2>
+    <section id="bora" class=" my-4 bg-folhas-left" data-aos="zoom-in">
+      <h2 class='text-center fw-bold text-uppercase fs-1 txt-laranja'data-aos="zoom-in">bora lá!</h2>
       <p class="text-center col-md-6 offset-md-3 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
         quibusdam iure delectus cumque, reprehenderit
         enim quae placeat maiores quos, ea quo, modi natus dicta fugit debitis dolores velit laudantium odit!</p>
@@ -233,8 +236,8 @@ xxl: 1400px -->
 
       <div class="row">
 
-        <div class="col-md-4">
-          <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5 ">
+        <div class="col-md-4" data-aos="fade-down-right" data-aos-delay='300' >
+          <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
             <img class="card-img-top rounded-0" src="../summer-exploring/imagens/grupo2-aventureira.jpg" alt="Title">
             <div class="card-body">
               <h4 class="card-title">Title</h4>
@@ -247,7 +250,7 @@ xxl: 1400px -->
 
 
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-out" data-aos-delay='450'>
           <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
             <img class="card-img-top rounded-0" src="imagens/grupo2-3amigos.jpg" alt="Title">
             <div class="card-body">
@@ -261,7 +264,7 @@ xxl: 1400px -->
 
 
 
-        <div class="col-md-4 ">
+        <div class="col-md-4" data-aos="fade-down-left" data-aos-delay='600'>
           <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
             <img class="card-img-top rounded-0" src="imagens/grupo2-bracos-abertos.jpg" alt="Title">
             <div class="card-body">
@@ -291,23 +294,23 @@ xxl: 1400px -->
     <!-- criando section.d-flex.flex-wrap  -->
     <section id="promocao" class="d-flex flex-wrap my-4">
       <!-- criando div.col-md-6*4  -->
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="flip-right" data-aos-delay='300'>
         <img src="imagens/grupo4-3amigos.jpg" class="img-fluid w-100" alt="Aventureiros olhando o horizonte">
       </div>
       <!-- adicionando d-flex flex-column justify-content-center   -->
       <div class="col-md-6 p-2 bg-cinza py-5 px-5 d-flex flex-column justify-content-center">
-        <h2 class="text-light fw-bold">Desconto de 50% em todas excurções.</h2>
+        <h2 class="text-light fw-bold" data-aos="zoom-out">Desconto de 50% em todas excurções.</h2>
         <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, impedit numquam? Eius,
           incidunt reiciendis deleniti adipisci est praesentium natus quasi nostrum similique inventore consequatur eum
           sed voluptatibus, repudiandae beatae nesciunt.</p>
       </div>
       <div class="col-md-6 p-2 bg-laranja py-5 px-5 d-flex flex-column justify-content-center">
-        <h2 class="text-light fw-bold">Na compra de uma 1 excurção, você ganha mais uma</h2>
+        <h2 class="text-light fw-bold"data-aos="zoom-out" data-aos-delay='200'>Na compra de uma 1 excurção, você ganha mais uma</h2>
         <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum fugit ducimus porro magni
           quos esse impedit voluptate debitis consequatur fugiat. Accusantium eos, veniam blanditiis tempora error ipsam
           quod molestias enim?</p>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
         <img src="imagens/grupo4-3amigos.jpg" alt="Aventureiros olhando o horizonte" class="img-fluid w-100">
       </div>
     </section>
@@ -329,7 +332,7 @@ xxl: 1400px -->
 
 
 
-    <!-- parte do depoimento  -->
+      <!-- parte do depoimento  -->
 
 
       <div class="col-12 d-flex my-4 justify-content-evenly align-items-center altura-400px ">
@@ -353,7 +356,9 @@ xxl: 1400px -->
         </div>
       </div>
       <div class="col-12 bg-folhas-left flip-x my-5 altura-400px d-flex justify-content-center align-itens-center">
-        <p class="col-md6 flip-x p-4 fs-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem distinctio qui iure eaque id veniam rerum tempore beatae, velit praesentium itaque dolore in quisquam consequuntur autem pariatur ut temporibus fugit?</p>
+        <p class="col-md6 flip-x p-4 fs-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Voluptatem distinctio qui iure eaque id veniam rerum tempore beatae, velit praesentium itaque dolore in
+          quisquam consequuntur autem pariatur ut temporibus fugit?</p>
       </div>
     </section>
 
@@ -383,6 +388,7 @@ xxl: 1400px -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="js/custom.js"></script>
 

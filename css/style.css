@@ -72,7 +72,7 @@ body{
     .expand-4:hover{
     width: 30%;
     color:#ff0;
-    transition:width 0.3s ease-out, color 1s ease-in-out !important;
+    transition:width 1s ease, color 1s ease-in-out !important;
     }
 
 
@@ -153,34 +153,40 @@ body{
 
 /**
  * ----------------------------------------
- * animation slide-top
+ * animation
  * ----------------------------------------
  */
- @-webkit-keyframes slide-top {
+ .kenburns-bottom {
+	-webkit-animation: kenburns-bottom 15s ease-out infinite both;
+	        animation: kenburns-bottom 15s ease-out infinite both;
+}
+
+@-webkit-keyframes kenburns-bottom {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-              
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
     }
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+      -webkit-transform: scale(1.25) translateY(15px);
+              transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
     }
-    0% {
-        -webkit-transform: translateY(-100px);
-                transform: translateY(-100px);
-      }
-
-
   }
-  @keyframes slide-top {
+  @keyframes kenburns-bottom {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
     }
     100% {
-      -webkit-transform: translateY(-100px);
-              transform: translateY(-100px);
+      -webkit-transform: scale(1.25) translateY(15px);
+              transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
     }
   }
   
