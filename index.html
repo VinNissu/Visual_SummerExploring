@@ -371,41 +371,42 @@ xxl: 1400px -->
         Preencha o formulário abaixo, queremos saber quem você é.
       </p>
 
-      <form action="" method="POST" enctype="multipart/form-data" class="pb-5 mb-5">
-
+      <form action="" class="pb-5 mb-5 needs-validation" novalidate method="POST" enctype="multipart/form-data">
         <div class="mb-3">
-          <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro">
+          <input type="text" required name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro:">
+          <div class="invalid-feedback">Digite o seu nome</div>
         </div>
 
 
         <div class="mb-3">
-          <input type="email" class="form-control" name="email" id="email"
+          <input type="email" required class="form-control" name="email" id="email"
             placeholder="digite um email válido, ex:abc@gmail.com">
+          <div class="invalid-feedback">Digite um e-mail válido:</div>
           <hr class="mb-3 mt-5">
         </div>
 
         <fieldset class="border border-secondary p-3">
           <legend>Sexo:</legend>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="Masculino">
+            <input class="form-check-input" required type="radio" name="sexo" id="sexo1" value="Masculino">
             <label class="form-check-label" for="">Masculino</label>
             <br>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Ferminino">
+            <input class="form-check-input" required type="radio" name="sexo" id="sexo2" value="Ferminino">
             <label class="form-check-label" for="">Feminino</label>
           </div>
-
+          <div class="invalid-feedback">Escolha uma opção</div>
         </fieldset>
-        
-        <p class="m-0 mt-5">Sua idade:<span id="txt-idade" class="fw-bold" ></span></p>
-        <input type="range" class="form-range" name="idade" value="18" min="0" max="99" id="customRange2">
-        
+
+        <p class="m-0 mt-5">Sua idade:<span id="txt-idade" class="fw-bold"></span></p>
+        <input type="range" class="form-range" id='idade' name="idade" value="18" min="0" max="99" id="customRange2">
+
         <hr class="mb-3 mt-5">
 
         <div class="mb-3 mt-4 ">
           <label for="telefone" class="form-label">Digite seu telefone:</label>
-          <input type="text" name="telefone" id="" class="form-control" placeholder="Inclua DDD" >
+          <input type="text" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
         </div>
 
         <div class="mb-3 mt-1">
@@ -465,7 +466,7 @@ xxl: 1400px -->
           <label class="form-check-label" for="">
             Grand Canyon - Arizona, USA
           </label>
-          
+
         </div>
         <hr class="mb-3 mt-5">
 
@@ -479,15 +480,27 @@ xxl: 1400px -->
             id="flexSwitchCheckChecked">
           <label class="form-check-label" for="flexSwitchCheckChecked">Hotel/Pousada (Nutella)</label>
         </div>
-       <hr class="mb-3 mt-5">
+        <hr class="mb-3 mt-5">
 
-          <div class="mb-3 mt-5">
-            <label for="mensagem" class="form-label">Envie sugestões/criticas</label>
-            <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="128"></textarea>
+        <div class="mb-3 mt-5">
+          <label for="mensagem" class="form-label">Envie sugestões/criticas</label>
+          <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="128"></textarea>
+        </div>
+        <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="termo" value="termo" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Aceitar termos e condições:
+            </label>
           </div>
-          <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
 
-          <button type="submit" class="btn btn-primary mb-5">Enviar</button>
+          <button type="submit" class="btn btn-primary mb-5 mt-2 px-5 ">Enviar</button>
+
+
+
+
+
 
       </form>
 
