@@ -238,7 +238,7 @@ xxl: 1400px -->
 
       <div class="row">
 
-        <div class="col-md-4" data-aos="fade-down-right" data-aos-delay='550'>
+        <div class="col-md-4" data-aos="fade-down-right" data-aos-delay='1150'>
           <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
             <img class="card-img-top rounded-0" src="../summer-exploring/imagens/grupo2-aventureira.jpg" alt="Title">
             <div class="card-body">
@@ -266,7 +266,7 @@ xxl: 1400px -->
 
 
 
-        <div class="col-md-4" data-aos="fade-down-left" data-aos-delay='600'>
+        <div class="col-md-4" data-aos="fade-down-left" data-aos-delay='1150'>
           <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
             <img class="card-img-top rounded-0" src="imagens/grupo2-bracos-abertos.jpg" alt="Title">
             <div class="card-body">
@@ -296,7 +296,7 @@ xxl: 1400px -->
     <!-- criando section.d-flex.flex-wrap  -->
     <section id="promocao" class="d-flex flex-wrap my-4">
       <!-- criando div.col-md-6*4  -->
-      <div class="col-md-6" data-aos="flip-right" data-aos-delay='1000'>
+      <div class="col-md-6" data-aos="flip-right" data-aos-delay='500'>
         <img src="imagens/grupo4-3amigos.jpg" class="img-fluid w-100" alt="Aventureiros olhando o horizonte">
       </div>
       <!-- adicionando d-flex flex-column justify-content-center   -->
@@ -371,7 +371,7 @@ xxl: 1400px -->
         Preencha o formulário abaixo, queremos saber quem você é.
       </p>
 
-      <form action="" method="POST" enctype="multipart/form-data">
+      <form action="" method="POST" enctype="multipart/form-data" class="pb-5 mb-5">
 
         <div class="mb-3">
           <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro">
@@ -381,7 +381,7 @@ xxl: 1400px -->
         <div class="mb-3">
           <input type="email" class="form-control" name="email" id="email"
             placeholder="digite um email válido, ex:abc@gmail.com">
-          <hr>
+          <hr class="mb-3 mt-5">
         </div>
 
         <fieldset class="border border-secondary p-3">
@@ -397,8 +397,51 @@ xxl: 1400px -->
           </div>
 
         </fieldset>
+        
+        <p class="m-0 mt-5">Sua idade:<span id="txt-idade" class="fw-bold" ></span></p>
+        <input type="range" class="form-range" name="idade" value="18" min="0" max="99" id="customRange2">
+        
+        <hr class="mb-3 mt-5">
 
-        <p>Selecione os destinos que gostaria de explorar:</p>
+        <div class="mb-3 mt-4 ">
+          <label for="telefone" class="form-label">Digite seu telefone:</label>
+          <input type="text" name="telefone" id="" class="form-control" placeholder="Inclua DDD" >
+        </div>
+
+        <div class="mb-3 mt-1">
+          <label for="senha" class="form-label">Digite uma senha</label>
+          <input type="password" class="form-control" name="senha" id="" placeholder="Sua senha">
+        </div>
+        <hr class="mt-4">
+        <div class="mb-3 mt-5">
+          <label for="foto" class="form-label">Selecione uma foto para o seu perfil</label>
+          <input type="file" class="form-control" name="foto" id="" placeholder="" aria-describedby="fileHelpId">
+          <div id="fileHelpId" class="form-text">Somente JPG, PNG ou GIF</div>
+        </div>
+        <hr class="mb-3 mt-5">
+
+        <div class="mb-3 col-md-6 mt-5">
+          <label for="" class="form-label">Selecione o seu estado(UF)</label>
+          <select class="form-control" name="estado" id="estado">
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Bahia">Bahia</option>
+          </select>
+        </div>
+
+
+        <div class="mb-3 col-md-6 ">
+          <label for="" class="form-label">Selecione a sua cidade</label>
+          <select class="form-control" name="cidade" id="cidade">
+            <option value="São José dos Campos">São José dos Campos</option>
+            <option value="Salvador">Salvador</option>
+            <option value="Belo Horizonte">Belo Horizonte</option>
+            <option value="Duque de caxias">Duque de caxias</option>
+          </select>
+        </div>
+        <hr class="mb-3 mt-5">
+        <p class="m-0 mt-5"> Selecione os destinos que gostaria de explorar:</p>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" name="destinos[]" value="Brotas-SP" id="">
           <label class="form-check-label" for="">
@@ -420,9 +463,31 @@ xxl: 1400px -->
         <div class="form-check">
           <input class="form-check-input" type="checkbox" name="destinos[]" value="Grand Canyon - Arizona, USA" id="">
           <label class="form-check-label" for="">
-            Grand Canyon - Arizona, USA 
+            Grand Canyon - Arizona, USA
           </label>
+          
         </div>
+        <hr class="mb-3 mt-5">
+
+        <p class="m-0 mt-5">Selecione o tipo de hospedagem</p>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" name="hospedagem" value="Acampar" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Acampar (raiz)</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" name="hospedagem" value="Hotel/Pousada"
+            id="flexSwitchCheckChecked">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Hotel/Pousada (Nutella)</label>
+        </div>
+       <hr class="mb-3 mt-5">
+
+          <div class="mb-3 mt-5">
+            <label for="mensagem" class="form-label">Envie sugestões/criticas</label>
+            <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="128"></textarea>
+          </div>
+          <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
+
+          <button type="submit" class="btn btn-primary mb-5">Enviar</button>
 
       </form>
 
