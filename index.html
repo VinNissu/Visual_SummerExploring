@@ -358,8 +358,8 @@ xxl: 1400px -->
             nobis vel.</p>
         </div>
       </div>
-      <div class="col-12 bg-folhas-left flip-x my-5 altura-400px d-flex justify-content-center align-itens-center">
-        <p class="col-md6 flip-x p-4 fs-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      <div class="col-12 bg-folhas-left my-5 altura-400px d-flex justify-content-center align-itens-center">
+        <p class="col-md6 p-4 fs-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Voluptatem distinctio qui iure eaque id veniam rerum tempore beatae, velit praesentium itaque dolore in
           quisquam consequuntur autem pariatur ut temporibus fugit?</p>
       </div>
@@ -371,11 +371,13 @@ xxl: 1400px -->
         Preencha o formulário abaixo, queremos saber quem você é.
       </p>
 
-      <form action="" method="POST" enctype="multipart/form-data" style="min-height: 400px;">
+      <form action="" method="POST" enctype="multipart/form-data">
 
         <div class="mb-3">
           <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro">
         </div>
+
+
         <div class="mb-3">
           <input type="email" class="form-control" name="email" id="email"
             placeholder="digite um email válido, ex:abc@gmail.com">
@@ -391,10 +393,36 @@ xxl: 1400px -->
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="Ferminino">
-            <label class="form-check-label" for="">Ferminino</label>
+            <label class="form-check-label" for="">Feminino</label>
           </div>
 
         </fieldset>
+
+        <p>Selecione os destinos que gostaria de explorar:</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Brotas-SP" id="">
+          <label class="form-check-label" for="">
+            Brotas-SP
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Bonito-MS" id="">
+          <label class="form-check-label" for="">
+            Bonito-MS
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Jalapão-TO" id="">
+          <label class="form-check-label" for="">
+            Jalapão-TO
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Grand Canyon - Arizona, USA" id="">
+          <label class="form-check-label" for="">
+            Grand Canyon - Arizona, USA 
+          </label>
+        </div>
 
       </form>
 
