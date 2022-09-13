@@ -1,20 +1,26 @@
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FUNÇÕES//////////////////////////////// */
-const aviso = (msg) =>[
-    alert(msg)
+const aviso = (msg) => [
+  alert(msg)
 ]
 
-// const mostraIdade = () =>{
-//     let span = document.getElementById('txt.idade')
-//     let campoIdade  = document.getElementById('idade')
-//     span.innerText = campoIdade.value   
-// }
 
-const mostraIdade = ()=>{
-    let span = document.getElementById('txt-idade')
-    let campoIdade = document.getElementById('idade')
-    span.innerText = campoIdade.value
+const mostraIdade = () => {
+  let span = document.getElementById('txt-idade')
+  let campoIdade = document.getElementById('idade')
+  span.innerText = campoIdade.value
 }
 
+var dataAtual = new Date()
+const mostraData = () =>{
+
+  let dia = dataAtual.getDate()
+  let mes = dataAtual.getMonth()+1
+  let ano = dataAtual.getFullYear()
+  let hora = dataAtual.getHours()
+  let valor = dia + '/' +  mes + '/' + ano + ' - ' +  hora   
+
+  document.getElementById('dt-cadastro').value = valor 
+}
 
 
 
@@ -30,10 +36,10 @@ const mostraIdade = ()=>{
 //     aviso('Hello World, este é o planeta Terra???')
 // });
 
-
 mostraIdade()
 document.getElementById('idade').addEventListener('change', mostraIdade)
 
+mostraData()
 
 
 
@@ -41,25 +47,33 @@ document.getElementById('idade').addEventListener('change', mostraIdade)
 // inicializa animações do AOS 
 AOS.init();
 
-// Example starter Java for disabling form submissions if there are invalid fields
-(function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
 
-  /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FIM//////////////////////////////// */
+
+
+////Impede o envio do formulário quando os campos estão inválidos\\\\
+(function () {
+  'use strict'
+
+
+  ////variável  captura as tags <form que contém a classe "needs-validation"\\\\\
+  var forms = document.querySelectorAll('.needs-validation')
+
+
+
+
+  //// Executa para cada formulário da variável forms\\\\
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        ////Se houver campos inválidos, interrompa o submit\\\\\
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FIM//////////////////////////////// */
