@@ -166,7 +166,7 @@ body {
 
 
 
-.kenburns-bottom {
+.kenburns-bottom:hover {
   -webkit-animation: kenburns-bottom 15s ease-out infinite both;
   animation: kenburns-bottom 15s ease-out infinite both;
 
