@@ -13,13 +13,27 @@ const mostraIdade = () => {
 var dataAtual = new Date()
 const mostraData = () =>{
 
-  let dia = dataAtual.getDate()
+  let dia = dataAtual.getDay()
   let mes = dataAtual.getMonth()+1
   let ano = dataAtual.getFullYear()
   let hora = dataAtual.getHours()
   let valor = dia + '/' +  mes + '/' + ano + ' - ' +  hora   
 
   document.getElementById('dt-cadastro').value = valor 
+}
+
+
+//Popula o select "estado" com os estados da API do IBGE\\
+const getEstados = () =>{
+  let api = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados'
+  let select = document.getElementById('estado')
+
+//Lê a API atravês do Fetch(), 1º then captura os dados, 2º then trata os dados
+  fetch(api).then(resposta => resposta.json()).then(json =>{
+    let options =  '<option>Selecione </option >' 
+
+    select.innerHTML = options 
+  })
 }
 
 
@@ -36,8 +50,13 @@ const mostraData = () =>{
 //     aviso('Hello World, este é o planeta Terra???')
 // });
 
+getEstados()
+
+
 mostraIdade()
 document.getElementById('idade').addEventListener('change', mostraIdade)
+
+
 
 mostraData()
 
