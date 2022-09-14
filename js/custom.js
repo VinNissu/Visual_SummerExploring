@@ -11,32 +11,49 @@ const mostraIdade = () => {
 }
 
 var dataAtual = new Date()
-const mostraData = () =>{
+const mostraData = () => {
 
   let dia = dataAtual.getDay()
-  let mes = dataAtual.getMonth()+1
+  let mes = dataAtual.getMonth() + 1
   let ano = dataAtual.getFullYear()
   let hora = dataAtual.getHours()
-  let valor = dia + '/' +  mes + '/' + ano + ' - ' +  hora   
+  let valor = dia + '/' + mes + '/' + ano + ' - ' + hora
 
-  document.getElementById('dt-cadastro').value = valor 
+  document.getElementById('dt-cadastro').value = valor
 }
 
 
 //Popula o select "estado" com os estados da API do IBGE\\
-const getEstados = () =>{
+const getEstados = () => {
   let api = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados'
   let select = document.getElementById('estado')
 
-//Lê a API atravês do Fetch(), 1º then captura os dados, 2º then trata os dados
-  fetch(api).then(resposta => resposta.json()).then(json =>{
-    let options =  '<option>Selecione </option >' 
+  //Lê a API atravês do Fetch(), 1º then captura os dados, 2º then trata os dados
+  fetch(api).then(resposta => resposta.json()).then(json => {
+    let options = '<option>Selecione </option >'
 
-    select.innerHTML = options 
+    //console.log(json)
+
+    for (const index in json) {
+      // console.log(json [index].nome)
+      options += '<option>' + json[index].nome + '</option>'
+    }
+
+
+    select.innerHTML = options
   })
 }
 
 
+/* EXEMPLO LAÇO FOR
+var xuxu = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"];
+var texto = ''
+for (let index = 0; index < xuxu.length; index++) {
+  const element = xuxu[index];
+  texto += element + '<br>'
+
+  document.getElementById('explorar').innerHTML = texto
+} */
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\FIM//////////////////////////////// */
 
@@ -45,7 +62,7 @@ const getEstados = () =>{
 /*\\\\\\\\\\EVENTOS E EXECUÇÕES AUTOMÁTICAS////////// */
 
 
-// aviso("Tenha um bom dia DAVE"); 
+// aviso("Tenha um bom dia DAVE Jones"); 
 // document.getElementById('nome').addEventListener('click', function(){
 //     aviso('Hello World, este é o planeta Terra???')
 // });
