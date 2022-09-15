@@ -711,3 +711,24 @@ body {
             transform: scale(1);
   }
 }
+
+|========Efeito de fade na seta=========|
+@keyframes fade-seta {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes fade-seta {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

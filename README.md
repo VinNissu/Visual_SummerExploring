@@ -9,6 +9,8 @@ Site Single page - HTML, CSS e JavaScript utilizando BOOTSTRAP
 O desafio foi transformar em código um layout do site em imagem JPG <br>
 Veja a imagem: <br>
 
+<img src="imagens/mockup-site.jpg" width="300">
+
 ## Consumo de APis 
 Foi utilizado um código javascript para popular os campos 
 select com uma lista dos estados e após a seleção, é 
