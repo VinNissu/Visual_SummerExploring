@@ -44,6 +44,23 @@ const getEstados = () => {
   })
 }
 
+const rolagem = () => {
+  const html = document.documentElement
+  const seta = document.getElementById('go-top')
+  
+  if (html.scrollTop > 500){
+     /* Se a rolagem for maior que 500, a seta aparece 
+  abaixo de 500 */
+    
+    seta.style.display = 'block'
+
+  } else {
+    seta.style.display ='none'
+  }
+ 
+}
+
+
 
 // Preencha o select de cidades de acordo com o UF selecionado 
 //A função recebe um parâmetro com o ID da UF
@@ -110,6 +127,8 @@ for (let index = 0; index < xuxu.length; index++) {
  */
 
 getEstados()
+
+rolagem()
 /* -------------------------------------------------------------------------------------------- */
 
 
@@ -221,6 +240,7 @@ document.getElementById('estado').addEventListener('change', function () {
   getCidadesByUf(this.value)
 })
 
-// 'this' represeta     objeto  'estado'
-// \\
+window.onscroll = ()=> rolagem( )
+
+// window.addEventListener('scroll' , rolagem)
 /* -------------------------------------------------------------------------------------------- */

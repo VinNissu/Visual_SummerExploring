@@ -159,14 +159,17 @@ body {
 
 
 .seta{
+  display: none;
+
   width: 2.5%;
   position: fixed;
   top:94%;
   left: 96.9%;
-  background-color: #e2a355;
   border-radius: 25%;
   transition: background-color 1s;
   box-shadow: rgb(106, 105, 109) 0 7px 5px;
+  
+  background-color: #e2a355;
 }
 
 .seta:hover{
