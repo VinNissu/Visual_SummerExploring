@@ -54,14 +54,9 @@ const getCidadesByUf = (uf) => {
 
   fetch(api).then(resposta => resposta.json()).then(json => {
     let options = '<option>Selecione </option >'
-
-
     for (const index in json) {
-
       options += `<option value = ${json[index].nome}>${json[index].nome}</option>`
     }
-
-
     select.innerHTML = options
   })
 }
