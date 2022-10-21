@@ -1,41 +1,33 @@
-/* paleta de cores  
-¹ orange:e2a355
-² orange clean;deb37e   
-³ gray; 7f7770 
-  dark-gray; 68635f
-  light-gray; c3bfbc
-*/
-
-
-
-
+/* paleta de cores 
+orange: #e2a355
+orange clean: #deb37e
+gray: #7f7770 
+dark gray: #68635f 
+light gray #c3bfbc */
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 
-/*_________________________________________________________________________________________________________________________________*/
-
-
-
-
-
-
-.bg-papel-bottom {
-  /* height:180px; */
-  background-image: url('../imagens/bg-rasgado-branco-topo.png');
-  background-size: 100%;
-  background-position: 0 -50px;
-  background-repeat: no-repeat;
-}
-
+/* header styles  */
 .logo {
   height: 80px;
 }
 
+.bg-papel-bottom {
+  background-image: url("../imagens/bg-rasgado-branco-topo.png");
+  background-size: 100%;
+  background-position: 0 -20px;
+  background-repeat: no-repeat;
+}
 
-/* barra de busca e borda do pesquisar */
+.expand-4:hover {
+  width: 33%;
+  color: #ff0;
+  transition: width 1s ease-in-out, color 1s ease-in !important;
+}
+
+/* ////////// BARRA DE BUSCA /////// */
 .searchbar {
   margin-bottom: auto;
   margin-top: auto;
@@ -43,47 +35,30 @@ body {
   background-color: #c3bfbc;
   border-radius: 30px;
   padding: 10px;
-  color: rgb(230, 216, 216);
 }
 
-
 .search_input {
-  color: rgb(255, 255, 255);
+  color: white;
   border: 0;
   outline: 0;
   background: none;
   width: 0;
   caret-color: transparent;
   line-height: 40px;
-  transition: width 0.5s linear;
+  transition: width 0.4s linear;
 }
 
-
-
-.searchbar:hover>.search_input {
+.searchbar:hover > .search_input {
   padding: 0 10px;
-  border-radius: 15px;
-  width: 250px;
-  caret-color: rgb(255, 255, 255);
-  transition: width 0.35s linear;
-  background-color: #c3bfbc
+  width: 200px;
+  caret-color: red;
+  transition: width 0.4s linear;
 }
 
-
-.expand-4:hover {
-  width: 30%;
-  color: #ff0;
-  transition: width 1s ease, color 1s ease-in-out !important;
-}
-
-
-
-.searchbar:hover>.search_icon {
+.searchbar:hover > .search_icon {
   background: white;
   color: #e2a355;
 }
-
-
 
 .search_icon {
   height: 40px;
@@ -97,10 +72,6 @@ body {
   text-decoration: none;
 }
 
-/*///// header styles /////*/
-
-/*_________________________________________________________________________________________________________________________________*/
-
 .txt-laranja {
   color: #e2a355;
 }
@@ -111,7 +82,6 @@ body {
 
 .bg-laranja {
   background-color: #deb37e;
-
 }
 
 .bg-cinza {
@@ -119,616 +89,106 @@ body {
 }
 
 .bg-cinza-op5 {
-  background-color: rgba(90, 87, 84, 0.5);
+  background-color: rgba(127, 119, 112, 0.5);
 }
 
-
 .bg-folhas-left {
-  background-image: url('../imagens/grupo2-bg-sombra-folhagem.png');
+  background-image: url("../imagens/bg-sombra-folhagem.png");
   background-repeat: no-repeat;
-  background-position: -100px;
+  background-position: 0 bottom;
   background-attachment: fixed;
+}
+
+.bg-folhas-left2 {
+  background-image: url("../imagens/bg-sombra-folhagem-flipx.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+
+.altura-400px {
+  height: 400px;
+}
+
+/* múltiplos backgrounds  */
+.bg-3 {
+  background-image: url("../imagens/bg-rasgado-branco-topo.png"),
+    url("../imagens/bg-sombra-folhagem.png"),
+    url("../imagens/bg-rasgado-branco-base.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 100%, 30%, 100%;
+  background-position: 0 -50px, 0 center, 0 320px;
+}
+
+.bg-topo-base-rasgado {
+  background-image: url("../imagens/bg-rasgado-branco-topo.png"),
+    url("../imagens/bg-rasgado-branco-base.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 100%;
+  background-position: 0 -80px, 0 100%;
 }
 
 .flip-x {
   transform: scaleX(-1);
 }
 
-.promocao {}
-
-.altura-400px {
-  height: 400px;
-}
-
-
-/* multiplos backgrounds */
-.bg-3 {
-  background-image: url('../imagens/bg-rasgado-branco-topo.png'), url('../imagens/bg-sombra-folhagem.png'), url('../imagens/bg-rasgado-branco-base.png');
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 100%, 28%, 100%;
-  background-position: 0 -50px, 0 center, 0 320px;
-}
-
-.bg-topo-base-rasgado {
-  background-image: url('../imagens/bg-rasgado-branco-topo.png'), url('../imagens/bg-rasgado-branco-base.png');
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 100%;
-  background-position: 0 -80px, 0 109%;
-}
-
-
-
-.seta{
+.seta-topo{
   display: none;
-
-  width: 2.5%;
   position: fixed;
-  top:94%;
-  left: 96.9%;
-  border-radius: 25%;
-  transition: background-color 1s;
-  box-shadow: rgb(106, 105, 109) 0 7px 5px;
-  
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #fff;  
+  background-color: #68635f;
+  transition: background-color 0.5s;
+}
+.seta-topo:hover{
+  color: #fff;  
   background-color: #e2a355;
 }
 
-.seta:hover{
-  background: white;
-  transition: background-color 1s;
+/* animação  */
+.kenburns-bottom-right {
+  -webkit-animation: kenburns-bottom-right 9s ease-out both;
+  animation: kenburns-bottom-right 9s ease-out both;
 }
-
-.seta svg{
-  color: white;
-  width: 90%;
-  margin-left: 4%;
-  padding:5%;
-  
-}
-
-.seta svg:hover{
-  color: black;
-  transition: ease-in;
-  
-}
-
-.setabaixo:hover{
-  background: white;
-  transition: background-color 1s;
-}
-
-.setabaixo{
-  width: 2.5%;
-  position: fixed;
-  top:2.3%;
-  left: 96.9%;
-  background-color: #e2a355;
-  border-radius: 25%;
-  transition: background-color 1s;
-  box-shadow: rgb(106, 105, 109) 0 3px 5px;
-}
-
-.setabaixo svg{
-  color: white;
-  width: 90%;
-  margin-left: 4%;
-  padding:5%;
-  
-}
-
-.setabaixo svg:hover{
-  color: black;
-  transition: ease-in;
-  
-}
-
-.kenburns-bottom:hover {
-  -webkit-animation: kenburns-bottom 15s ease-out infinite both;
-  animation: kenburns-bottom 15s ease-out infinite both;
-
-}
-
-@-webkit-keyframes kenburns-bottom {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 84%;
-    transform-origin: 50% 84%;
-  }
-
-  100% {
-    -webkit-transform: scale(1.25) translateY(15px);
-    transform: scale(1.25) translateY(15px);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-  }
-}
-
-@keyframes kenburns-bottom {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 84%;
-    transform-origin: 50% 84%;
-  }
-
-  100% {
-    -webkit-transform: scale(1.25) translateY(15px);
-    transform: scale(1.25) translateY(15px);
-    -webkit-transform-origin: bottom;
-    transform-origin: bottom;
-  }
-}
-
-
-.flicker-in-1 {
-  -webkit-animation: flicker-in-1 2s linear both;
-  animation: flicker-in-1 2s linear both;
-}
-
-
-/* ----------------------------------------------
- * Generated by Animista on 2022-9-13 11:51:36
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
 
 /**
  * ----------------------------------------
- * @animation flicker-in-1
+ * animation kenburns-bottom-right
  * ----------------------------------------
  */
-@-webkit-keyframes flicker-in-1 {
+@-webkit-keyframes kenburns-bottom-right {
   0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  10.1% {
-    opacity: 1;
-  }
-
-  10.2% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  20.1% {
-    opacity: 1;
-  }
-
-  20.6% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  30.1% {
-    opacity: 1;
-  }
-
-  30.5% {
-    opacity: 1;
-  }
-
-  30.6% {
-    opacity: 0;
-  }
-
-  45% {
-    opacity: 0;
-  }
-
-  45.1% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  55% {
-    opacity: 1;
-  }
-
-  55.1% {
-    opacity: 0;
-  }
-
-  57% {
-    opacity: 0;
-  }
-
-  57.1% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  60.1% {
-    opacity: 0;
-  }
-
-  65% {
-    opacity: 0;
-  }
-
-  65.1% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  75.1% {
-    opacity: 0;
-  }
-
-  77% {
-    opacity: 0;
-  }
-
-  77.1% {
-    opacity: 1;
-  }
-
-  85% {
-    opacity: 1;
-  }
-
-  85.1% {
-    opacity: 0;
-  }
-
-  86% {
-    opacity: 0;
-  }
-
-  86.1% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flicker-in-1 {
-  0% {
-    opacity: 0;
-  }
-
-  10% {
-    opacity: 0;
-  }
-
-  10.1% {
-    opacity: 1;
-  }
-
-  10.2% {
-    opacity: 0;
-  }
-
-  20% {
-    opacity: 0;
-  }
-
-  20.1% {
-    opacity: 1;
-  }
-
-  20.6% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  30.1% {
-    opacity: 1;
-  }
-
-  30.5% {
-    opacity: 1;
-  }
-
-  30.6% {
-    opacity: 0;
-  }
-
-  45% {
-    opacity: 0;
-  }
-
-  45.1% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  55% {
-    opacity: 1;
-  }
-
-  55.1% {
-    opacity: 0;
-  }
-
-  57% {
-    opacity: 0;
-  }
-
-  57.1% {
-    opacity: 1;
-  }
-
-  60% {
-    opacity: 1;
-  }
-
-  60.1% {
-    opacity: 0;
-  }
-
-  65% {
-    opacity: 0;
-  }
-
-  65.1% {
-    opacity: 1;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  75.1% {
-    opacity: 0;
-  }
-
-  77% {
-    opacity: 0;
-  }
-
-  77.1% {
-    opacity: 1;
-  }
-
-  85% {
-    opacity: 1;
-  }
-
-  85.1% {
-    opacity: 0;
-  }
-
-  86% {
-    opacity: 0;
-  }
-
-  86.1% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.roll-in-blurred-left {
-  -webkit-animation: roll-in-blurred-left 1.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  animation: roll-in-blurred-left 2.3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-
-@-webkit-keyframes roll-in-blurred-left {
-  0% {
-    -webkit-transform: translateX(-1000px) rotate(-720deg);
-    transform: translateX(-1000px) rotate(-720deg);
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-    transform: translateX(0) rotate(0deg);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@keyframes roll-in-blurred-left {
-  0% {
-    -webkit-transform: translateX(-10 00px) rotate(-720deg);
-    transform: translateX(-3000px) rotate(720deg);
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translateX(0) rotate(0deg);
-    transform: translateX(0) rotate(0deg);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-
-
-.rotate-center {
-  -webkit-animation: rotate-center 2.6s ease-in-out both;
-  animation: rotate-center 1.0s ease-in-out both;
-}
-
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.heartbeat {
-	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
-}
-
- @-webkit-keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-@keyframes heartbeat {
-  from {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  10% {
-    -webkit-transform: scale(0.91);
-            transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  17% {
-    -webkit-transform: scale(0.98);
-            transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  33% {
-    -webkit-transform: scale(0.87);
-            transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  45% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-}
-
-.pulsate-fwd {
-	-webkit-animation: pulsate-fwd 1.2s infinite ;
-	        animation: pulsate-fwd 1.2s infinite ;
-}
-
-
-@-webkit-keyframes pulsate-fwd {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+    transform-origin: 84% 84%;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+    transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
   }
 }
-@keyframes pulsate-fwd {
+@keyframes kenburns-bottom-right {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 84% 84%;
+    transform-origin: 84% 84%;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.25) translate(20px, 15px);
+    transform: scale(1.25) translate(20px, 15px);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
   }
-}
-
-|========Efeito de fade na seta=========|
-@keyframes fade-seta {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-@-webkit-keyframes fade-seta {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 100%;
-    }
 }

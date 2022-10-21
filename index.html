@@ -1,117 +1,63 @@
-<!doctype html>
-<html lang="pt_BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-  <title>summer-exploring</title>
+  <title>Summer Exploring</title>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet" />
 
-
-
-
-
-  <!-- FONTES GOOGLE -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&display=swap"
-    rel="stylesheet">
-
-
-  <!-- biblioteca de icon -->
+  <!-- biblioteca de ícones -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
 
   <!-- Bootstrap CSS v5.2.0-beta1 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
 
+  <!-- Biblioteca de animação AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-
-
-
-
-  <!-- conectando css -->
-  <!-- biblioteca de animação aos  -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- o meu css carrega por ultimo no head  -->
-  <link rel="stylesheet" href="css/style.css">
-
-
-
-
-
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
+<body class="pt-5">
   <header class="fixed-top">
-
-
-
-
-    <!-- place navbar here -->
     <nav class="navbar navbar-expand-sm bg-papel-bottom pt-0 pb-4">
-
-
       <div class="container">
-
-        <!-- logotipo do site  -->
-        <a class="navbar-brand" href="#"><img src="./imagens/logo.png" class="logo rotate-center" data-aos="zoom-in"
-            alt="logo tipo summer exploring"></a>
+        <a class="navbar-brand" href="#"><img src="./imagens/logo.png" class="logo"
+            alt="Logotipo Summer Exploring" /></a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-
-
-
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-
-
-            <!-- navegadores link  -->
-
-            <div class="setabaixo" > <a href="#botaoenviar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pulsate-fwd">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
-</svg>
-</a></div>
-
-
-            <li class="nav-item me-3" data-aos="zoom-in">
-              <a class="nav-link active fw-bold" href="#" aria-current="page">HOME<span
+            <li class="nav-item me-3">
+              <a class="nav-link active fw-bold" href="#" aria-current="page">HOME <span
                   class="visually-hidden">(current)</span></a>
             </li>
-
-            <li class="nav-item me-3" data-aos="zoom-in">
-              <a class="nav-link fw-bold " href="#bora">BORA LÁ</a>
+            <li class="nav-item me-3">
+              <a class="nav-link fw-bold" href="#bora">BORA LÁ</a>
             </li>
-
-
-            <li class="nav-item me-3" data-aos="zoom-in">
-              <a class="nav-link fw-bold " href="#promocao">PROMOÇÃO</a>
+            <li class="nav-item me-3">
+              <a class="nav-link fw-bold" href="#promocao">PROMOÇÃO</a>
             </li>
-
-
-            <li class="nav-item me-3 " data-aos="zoom-in">
-              <a class="nav-link fw-bold " href="#explorar">EXPLORAR</a>
+            <li class="nav-item me-3">
+              <a class="nav-link fw-bold" href="#explorar">EXPLORAR</a>
             </li>
-
-            <li class="nav-item me-3" data-aos="zoom-in">
-              <a class="nav-link fw-bold " href="#contato">CONTATO</a>
+            <li class="nav-item me-3">
+              <a class="nav-link fw-bold" href="#contato">CONTATO</a>
             </li>
-
           </ul>
-          <!-- form é a barra de busca -->
           <form class="d-flex my-2 my-lg-0">
-            <!-- <input class="form-control me-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-            <div class="searchbar  " data-aos="zoom-in">
-              <input class="search_input " type="text" name="" placeholder="Search...">
+            <div class="searchbar">
+              <input class="search_input" type="text" name="" placeholder="Search..." />
               <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
             </div>
           </form>
@@ -120,75 +66,55 @@
     </nav>
   </header>
 
+  <main class="col-lg-10 offset-lg-1 mt-5">
 
+    <div id="msg" class=" d-none alert alert-success alert-dismissible fade show" role="alert">
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <strong>Usuário Cadastro</strong>
+    </div>
+    
+    
+    
 
-  <!-- tipos de breakpoint: 
-  xs: 0,
-sm: 576px,
-md: 768px,
-lg: 992px,
-xl: 1200px,
-xxl: 1400px -->
-
-
-  <!-- antes -->
-  <!-- <main class= "col-10 offset-1"> -->
-
-  <!-- depois -->
-  <!-- (lg = de 992 pra cima )   -->
-  <!-- tratamento para mobiles -->
-  <main class="col-lg-10 offset-lg-1 ">
-
-
-
-    <!-- antes  
-    <section id="banner-topo">-->
-
-
-    <!-- depois  -->
-    <!-- d-md-none significa para ocultar da md(768px pra cima ) -->
-    <!-- d-nome md-block para mostrar da md pra cima  -->
-    <!-- <section id="banner-topo" class="d-none d-md-block"> -->
-
-    <section id="banner-topo" class=".d-sm-none .d-md-block .d-lg-none">
-
-
-
-
-
-
-
-
+    <section id="banner-topo" class="d-none d-md-block">
       <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
           <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="First slide"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
           <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+          <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Four slide"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img src="imagens/banner-topo-aventureira-recortado.jpg " class="w-100 d-block kenburns-bottom"
-              alt="First slide">
+            <img src="./imagens/banner-topo-aventureira.jpg" class="w-100 d-block kenburns-bottom-right"
+              alt="First slide" />
             <div class="carousel-caption d-none d-md-block">
               <h3>Title</h3>
               <p>Description</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imagens/banner-topo-jeep-recortado.jpg" class="w-100 d-block kenburns-bottom" alt="Second slide">
+            <img src="./imagens/banner-topo-jeep.jpg" class="w-100 d-block kenburns-bottom-right" alt="Second slide" />
             <div class="carousel-caption d-none d-md-block">
               <h3>Title</h3>
               <p>Description</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="imagens/banner-topo-montanha-recortado.jpg" class="w-100 d-block kenburns-bottom"
-              alt="Third slide">
+            <img src="./imagens/banner-topo-montanha.jpg" class="w-100 d-block kenburns-bottom-right"
+              alt="Third slide" />
             <div class="carousel-caption d-none d-md-block">
               <h3>Title</h3>
               <p>Description</p>
-
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imagens/banner-topo-floresta.jpg" class="w-100 d-block kenburns-bottom-right"
+              alt="Third slide" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Title</h3>
+              <p>Description</p>
             </div>
           </div>
         </div>
@@ -203,266 +129,239 @@ xxl: 1400px -->
       </div>
     </section>
 
-
-
-
-    <!-- 1 -->
-    <!-- <section id="bora"> -->
-    <!-- 2 -->
-    <!-- p lorem -->
-    <!-- 3 -->
-    <!-- class my-4 para distacia a bora  -->
-    <!-- 4 -->
-    <!-- criando uma   class='text-center text-bold text-uppercase'       dentro do h2 para formatar sem css  -->
-    <!-- 5 -->
-    <!-- criando uma   class="text-center" dentro do p para centralizar o texto  -->
-    <!-- 6 -->
-    <!-- colocando col-md-8 offset-md-2 mb-3 dentro do p para formatar -->
-    <!-- 7 -->
-    <!-- colocando tamanho e cor fs-1 txt-laranja -->
-    <!-- 8 -->
-    <!-- criando uma classe  para a imagem class=" my-4 bg-folhas-left"> -->
-    <section id="bora" class=" my-4 bg-folhas-left" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0">
-      <h2 class='text-center fw-bold text-uppercase fs-1 txt-laranja  ' data-aos="zoom-in">bora lá!</h2>
-      <p class="text-center col-md-6 offset-md-3 mb-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
-        quibusdam iure delectus cumque, reprehenderit
-        enim quae placeat maiores quos, ea quo, modi natus dicta fugit debitis dolores velit laudantium odit!</p>
-
-
-
-
-      <!-- (card da pagina ) -->
-      <!-- 4 -->
-      <!-- div.row  -->
-      <!-- div.col-md-4 (md e 4 significa para ter coluna na tela media pra cima md: 768px,) -->
-      <!-- div.col-md-4*3( irá repetir 3 vezes ) -->
-      <!-- bs5-card-default dentro da div.col-md-4 -->
-      <!-- tirando arredondamento e borda das imagens  
-       <div class="card bg-cinza text-light rounded-0 border-0">
-         <img class="card-img-top rounded-0"
-         -->
-
+    <section id="bora" class="my-4 bg-folhas-left">
+      <h2 class="text-center fw-bold text-uppercase fs-1 txt-laranja">
+        Bora lá
+      </h2>
+      <p class="text-center col-md-6 offset-md-3 mb-3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+        perferendis ex, sed molestias fuga veritatis maiores eveniet, delectus
+        et iusto nemo. Reiciendis atque amet doloremque beatae esse numquam
+        omnis assumenda.
+      </p>
 
       <div class="row">
-
-        <div class="col-md-4" data-aos="fade-down-right" data-aos="flip-left">
-          <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
-            <img class="card-img-top rounded-0" src="../summer-exploring/imagens/grupo2-aventureira.jpg" alt="Title">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+            <img class="card-img-top rounded-0" src="./imagens/grupo2-3amigos.jpg" alt="Title" />
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore placeat,
-                totam, a, quidem minima et debitis odio reiciendis quos ullam nihil? Atque beatae dolorem ut nostrum
-                hic! Nesciunt, pariatur?</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Minima exercitationem eligendi repellat ex consequuntur fuga
+                accusamus dolorum sequi neque modi beatae facilis possimus
+                sint quis, magnam aspernatur expedita dicta odit.
+              </p>
             </div>
           </div>
         </div>
-
-
-
-        <div class="col-md-4" data-aos="zoom-out" data-aos="flip-left">
-          <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
-            <img class="card-img-top rounded-0" src="imagens/grupo2-3amigos.jpg" alt="Title">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
+          <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+            <img class="card-img-top rounded-0" src="./imagens/grupo2-aventureira.jpg" alt="Title" />
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus pariatur, id ea
-                iure, impedit consequatur praesentium eum, velit repellat ex quas totam natus? Facilis deserunt
-                excepturi, dolore reiciendis tempore eligendi?</p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur numquam porro deleniti magni at? Saepe modi,
+                molestias asperiores odio natus vero, culpa suscipit dolores
+                possimus esse voluptas quasi aut iure?
+              </p>
             </div>
           </div>
         </div>
-
-
-
-        <div class="col-md-4" data-aos="fade-down-left" data-aos="flip-left">
-          <div class="card bg-cinza text-light rounded-0 border-0 bg-cinza-op5">
-            <img class="card-img-top rounded-0" src="imagens/grupo2-bracos-abertos.jpg" alt="Title">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="600" data-aos-duration="3000">
+          <div class="card bg-cinza-op5 text-light rounded-0 border-0">
+            <img class="card-img-top rounded-0" src="./imagens/grupo2-bracos-abertos.jpg" alt="Title" />
             <div class="card-body">
               <h4 class="card-title">Title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique tempora
-                dignissimos facere, soluta quia ab deserunt incidunt doloremque nostrum nobis odio, reprehenderit
-                repellendus quas est! Itaque quae repudiandae ut.</p>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat ea dolorem asperiores, dolores ipsam quod saepe, quas
+                vero voluptatem ipsum, tempore enim nesciunt. Perferendis
+                excepturi magni alias repellat deleniti maiores.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-
-        <!-- criando botões  -->
-        <!-- div.col-md-4.mx-auto -->
-        <!-- alterar para d-grid col-4 mx-auto mt-4  -->
-        <!-- dentro do button criar    class="rounded-5 bg-cinza text-light p-3  -->
-
-
-        <div class="d-grid col-2 mx-auto mt-4 expand-4">
-          <button class="rounded-5 bg-cinza fs-3 fw-bold text-light p-3">Show More</button>
-        </div>
-
-
+      <div class="d-grid col-2 mx-auto mt-4 expand-4">
+        <button class="rounded-5 border-0 bg-cinza text-light p-3">
+          Show More
+        </button>
+      </div>
     </section>
 
-
-    <!-- criando section.d-flex.flex-wrap  -->
     <section id="promocao" class="d-flex flex-wrap my-4">
-      <!-- criando div.col-md-6*4  -->
-      <div class="col-md-6">
-        <img src="imagens/grupo4-3amigos.jpg" class="img-fluid w-100" alt="Aventureiros olhando o horizonte" data-aos="zoom-out-up">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="imagens/grupo4-3amigos.jpg" class="w-100" alt="Aventureiros olhando o horizonte" />
       </div>
-      <!-- adicionando d-flex flex-column justify-content-center   -->
-      <div class="col-md-6 p-2 bg-cinza py-5 px-5 d-flex flex-column justify-content-center">
-        <h2 class="text-light fw-bold" >Desconto de 50% em todas excurções.</h2>
-        <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, impedit numquam? Eius,
-          incidunt reiciendis deleniti adipisci est praesentium natus quasi nostrum similique inventore consequatur eum
-          sed voluptatibus, repudiandae beatae nesciunt.</p>
+      <div class="col-md-6 bg-cinza py-5 px-5 d-flex flex-column justify-content-center">
+        <h2 class="text-light fw-bold" data-aos="fade">
+          Desconto de 50% em todas excursões
+        </h2>
+        <p class="text-light" data-aos="fade">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          unde iusto pariatur error cupiditate. Perferendis vero consequatur
+          quod repellendus atque, voluptas reprehenderit illo modi deleniti
+          magnam at ut impedit beatae!
+        </p>
       </div>
-      <div class="col-md-6 p-2 bg-laranja py-5 px-5 d-flex flex-column justify-content-center">
-        <h2 class="text-light fw-bold" >Na compra de uma 1 excurção, você ganha
-          mais uma</h2>
-        <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum fugit ducimus porro magni
-          quos esse impedit voluptate debitis consequatur fugiat. Accusantium eos, veniam blanditiis tempora error ipsam
-          quod molestias enim?</p>
+      <div class="col-md-6 bg-laranja py-5 px-5 d-flex flex-column justify-content-center">
+        <h2 class="text-light fw-bold" data-aos="zoom-in" data-aos-duration="500">
+          Na compra de uma 1 excursão você ganha mais uma
+        </h2>
+        <p class="text-light" data-aos="zoom-in" data-aos-duration="500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum
+          velit harum earum? Cupiditate consequuntur facere amet debitis optio
+          repellat et quia repudiandae dignissimos assumenda, molestias atque
+          animi excepturi quis.
+        </p>
       </div>
-      <div class="col-md-6" data-aos="zoom-out-up"  >
-        <img src="imagens/grupo4-3amigos.jpg" alt="Aventureiros olhando o horizonte" class="img-fluid w-100">
+      <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+        <img src="imagens/grupo3-3amigos.jpg" alt="" class="w-100" />
       </div>
     </section>
-
 
     <section id="explorar">
       <div class="col-12 bg-cinza-op5 d-flex flex-column justify-content-center align-items-center altura-400px bg-3">
-        <h2 class="text-light fw-bold text-center">Vença as montanhas!</h2>
-        <p class="text-light text-center col-8 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Repellendus nemo optio, placeat odit earum non, inventore voluptates libero voluptatem ullam possimus. Eveniet
-          reprehenderit odio cum. Quod ullam sunt ratione. Ab.</p>
+        <h2 class="text-light fw-bold text-center">Vença as montanhas</h2>
+        <p class="text-light text-center col-8">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Voluptatibus sint reiciendis iusto aut blanditiis odit at dolorem
+          illo cumque, maiores perferendis perspiciatis minima eaque
+          asperiores tempora! Architecto at distinctio animi.
+        </p>
       </div>
       <div class="col-12 position-relative">
-        <img src="imagens/grupo6-escalada.jpg" class="w-100" alt="escalada">
-        <h2 class="position-absolute top-50 0 end-0 px-5 txt-laranja fw-bold fs-1 fst-italic">EXPLORE O <span
-            class="txt-cinza">MUNDO!!</span></h2>
+        <img src="./imagens/grupo6-escalada.jpg" class="w-100" alt="" />
+        <h2 class="position-absolute top-50 end-0 px-5 txt-laranja fw-bold fs-1 fst-italic">
+          EXPLORE O <span class="txt-cinza">MUNDO</span>
+        </h2>
       </div>
 
-
-
-
-      <!-- parte do depoimento  -->
-
-
-      <div class="col-12 d-flex my-4 justify-content-evenly align-items-center altura-400px ">
+      <div class="col-12 d-flex my-4 justify-content-evenly align-items-center altura-400px">
         <div class="col-md-3">
-          <h2 class="txt-laranja fw-bold ">Lorem ipsun</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perspiciatis ullam dolore nostrum nam,
-            est nemo commodi quod, labore consequuntur voluptas deserunt explicabo ipsam pariatur. Ullam quisquam saepe
-            quidem eos.</p>
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            nesciunt error voluptates velit ipsa consequuntur saepe
+            blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi
+            quae iure quos totam recusandae sed tempora!
+          </p>
         </div>
         <div class="col-md-3">
-          <h2 class="txt-laranja fw-bold ">Lorem ipsun</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellendus corrupti dicta a? Labore vel
-            incidunt inventore reiciendis nostrum sint neque, iusto molestias minima aspernatur voluptas, aut,
-            exercitationem dicta a.</p>
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            nesciunt error voluptates velit ipsa consequuntur saepe
+            blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi
+            quae iure quos totam recusandae sed tempora!
+          </p>
         </div>
         <div class="col-md-3">
-          <h2 class="txt-laranja fw-bold ">Lorem ipsun</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam beatae laudantium vitae, quam eos
-            doloribus? Sequi rerum dicta ullam? Ad consectetur perferendis magnam repellat saepe harum incidunt vero
-            nobis vel.</p>
+          <h2 class="txt-laranja fw-bold">Lorem Ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            nesciunt error voluptates velit ipsa consequuntur saepe
+            blanditiis, impedit rerum dignissimos perferendis? Fugit eligendi
+            quae iure quos totam recusandae sed tempora!
+          </p>
         </div>
       </div>
-      <div class="col-12 bg-folhas-left my-5 altura-400px d-flex justify-content-center align-itens-center">
-        <p class="col-md6 p-4 fs-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Voluptatem distinctio qui iure eaque id veniam rerum tempore beatae, velit praesentium itaque dolore in
-          quisquam consequuntur autem pariatur ut temporibus fugit?</p>
+      <div class="col-12 bg-folhas-left2 my-5 altura-400px d-flex justify-content-center align-items-center">
+        <p class="col-md-6 p-4 fs-3 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At modi
+          totam, fuga ducimus voluptatum aspernatur enim aliquam ea minima
+          dolores quasi sed quas repellat! Voluptatum, at iure! Consequuntur,
+          quam dolorem?
+        </p>
       </div>
     </section>
 
     <section id="contato" class="mt-5 p-5 bg-topo-base-rasgado bg-laranja">
-      <h2 class="mt-5 text-center text-light fw-bold ">Seus dados</h2>
+      <h2 class="mt-5 text-center text-light fw-bold">Seus dados</h2>
       <p class="col-6 mx-auto mb-5 text-center">
         Preencha o formulário abaixo, queremos saber quem você é.
       </p>
 
-      <form action="" class="pb-5 mb-5 needs-validation" novalidate method="POST" enctype="multipart/form-data">
+      <form class="pb-5 mb-5 needs-validation" novalidate action="processa.php" method="POST" enctype="multipart/form-data">
         <div class="mb-3">
-          <input type="text" required name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro:">
+          <input type="text" required name="nome" id="nome" class="form-control" placeholder="Digite seu nome inteiro" />
           <div class="invalid-feedback">Digite o seu nome</div>
         </div>
-
-
         <div class="mb-3">
           <input type="email" required class="form-control" name="email" id="email"
-            placeholder="digite um email válido, ex:abc@gmail.com">
-          <div class="invalid-feedback">Digite um e-mail válido:</div>
-          <hr class="mb-3 mt-5">
+            placeholder="Seu email válido, ex.: abc@mail.com" />
+          <div class="invalid-feedback">Digite um email válido</div>
         </div>
 
         <fieldset class="border border-secondary p-3">
           <legend>Sexo:</legend>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="sexo" id="sexo1" value="Masculino">
-            <label class="form-check-label" for="">Masculino</label>
-            <br>
+            <input class="form-check-input" required type="radio" name="sexo" id="sexo1" value="Feminino" />
+            <label class="form-check-label" for="">Feminino</label>
+            <span class="invalid-feedback">Escolha uma opção </span>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="sexo" id="sexo2" value="Ferminino">
-            <label class="form-check-label" for="">Feminino</label>
+            <input class="form-check-input" required type="radio" name="sexo" id="sexo2" value="Masculino" />
+            <label class="form-check-label" for="">Masculino</label>
+            <span class="invalid-feedback">Escolha uma opção </span>
           </div>
-          <div class="invalid-feedback">Escolha uma opção</div>
+          
         </fieldset>
 
-        <p class="m-0 mt-5">Sua idade:<span id="txt-idade" class="fw-bold"></span></p>
-        <input type="range" class="form-range" id='idade' name="idade" value="18" min="0" max="80" id="customRange2">
+        <p class="m-0 mt-2">Sua idade: <span id="txt-idade" class="fw-bold"></span></p>
+        <input type="range" class="form-range" id="idade" name="idade" value="" min="0" max="90">
 
-        <hr class="mb-3 mt-5">
-
-        <div class="mb-3 mt-4 ">
-          <label for="telefone" class="form-label">Digite seu telefone:</label>
-          <input type="text" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Seu Telefone:</label>
+          <input type="tel" name="telefone" id="" class="form-control" placeholder="Inclua DDD">
         </div>
 
-        <div class="mb-3 mt-1">
+        <div class="mb-3">
           <label for="senha" class="form-label">Digite uma senha</label>
-          <input type="password" class="form-control" name="senha" id="" placeholder="Sua senha">
+          <input type="password" class="form-control" name="senha" id="" placeholder="">
         </div>
-        <hr class="mt-4">
-        <div class="mb-3 mt-5">
+
+        <div class="mb-3">
           <label for="foto" class="form-label">Selecione uma foto para o seu perfil</label>
           <input type="file" class="form-control" name="foto" id="" placeholder="" aria-describedby="fileHelpId">
           <div id="fileHelpId" class="form-text">Somente JPG, PNG ou GIF</div>
         </div>
-        <hr class="mb-3 mt-5">
 
-        <div class="mb-3 col-md-6 mt-5">
-          <label for="" class="form-label">Selecione o seu estado(UF)</label>
+        <div class="mb-3 col-md-6">
+          <label for="estado" class="form-label">Selecione o seu Estado (UF)</label>
           <select class="form-control" name="estado" id="estado">
-            <option >Selecione:</option>
+            <option>Selecione</option>
           </select>
         </div>
 
-
-        <div class="mb-3 col-md-6 ">
-          <label for="" class="form-label">Selecione a sua cidade</label>
+        <div class="mb-3 col-md-6">
+          <label for="cidade" class="form-label">Selecione a sua cidade</label>
           <select class="form-control" name="cidade" id="cidade">
-            <option >Selecione</option>
+            <option>Selecione</option>
           </select>
         </div>
-        <hr class="mb-3 mt-5">
-        <p class="m-0 mt-5"> Selecione os destinos que gostaria de explorar:</p>
+
+
+        <p class="m-0 mt-5">Selecione os destinos que gostaria de explorar:</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="destinos[]" value="Brotas-SP" id="">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Brotas - SP" id="">
           <label class="form-check-label" for="">
-            Brotas-SP
+            Brotas - SP
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="destinos[]" value="Bonito-MS" id="">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Bonito - MS" id="">
           <label class="form-check-label" for="">
-            Bonito-MS
+            Bonito - MS
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" name="destinos[]" value="Jalapão-TO" id="">
+          <input class="form-check-input" type="checkbox" name="destinos[]" value="Jalapão - TO" id="">
           <label class="form-check-label" for="">
-            Jalapão-TO
+            Jalapão - TO
           </label>
         </div>
         <div class="form-check">
@@ -470,93 +369,61 @@ xxl: 1400px -->
           <label class="form-check-label" for="">
             Grand Canyon - Arizona, USA
           </label>
-
         </div>
-        <hr class="mb-3 mt-5">
 
         <p class="m-0 mt-5">Selecione o tipo de hospedagem</p>
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="hospedagem" value="Acampar" id="flexSwitchCheckDefault">
-          <label class="form-check-label" for="flexSwitchCheckDefault">Acampar (raiz)</label>
+          <input class="form-check-input" type="checkbox" name="hospedagem" value="Acampar">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Acampar (Raiz)</label>
         </div>
         <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" name="hospedagem" value="Hotel/Pousada"
-            id="flexSwitchCheckChecked">
-          <label class="form-check-label" for="flexSwitchCheckChecked">Hotel/Pousada (Nutella)</label>
+          <input class="form-check-input" type="checkbox" name="hospedagem" value="Hotel/Pousada">
+          <label class="form-check-label" for="flexSwitchCheckChecked">Hotel/Pousada (Nutela)</label>
         </div>
-        <hr class="mb-3 mt-5">
 
-        <div class="mb-3 mt-5">
-          <label for="mensagem" class="form-label">Envie sugestões/criticas</label>
-          <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="128"></textarea>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Envie sugestões / críticas</label>
+          <textarea class="form-control" name="mensagem" id="" rows="5" maxlength="256"></textarea>
         </div>
+
         <input type="hidden" name="dt-cadastro" id="dt-cadastro" value="">
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="termo" value="termo" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-              Aceitar termos e condições:
-            </label>
-          </div>
 
-          <button type="submit" id="botaoenviar" class="btn btn-primary mb-5 mt-2 px-5 ">Enviar</button>
-
-
-
-
-
-         
-          
+        <button type="submit" class="btn btn-primary mb-5">Enviar</button>
 
       </form>
-
     </section>
-
-    <div class="seta  " id="go-top" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pulsate-fwd">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
-    </svg>
-    </a></div>
-
-
-
-<div class="setabaixo" > <a href="#botaoenviar"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pulsate-fwd">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
-</svg>
-</a></div>
-
   </main>
-
-
-
-
-
-
 
   <footer>
     <!-- place footer here -->
   </footer>
 
 
-
-
+  <a href="#" id="go-top" class="seta-topo"><i class="fas fa-arrow-up"></i></a>
+  
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-    </script>
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
-    </script>
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  
+  <script>
+    var alertList = document.querySelectorAll('.alert');
+    alertList.forEach(function (alert) {
+      new bootstrap.Alert(alert)
+    })
+  </script>
 
   <script src="js/custom.js"></script>
 
-
-
-
-
-
+  
 </body>
 
 </html>
