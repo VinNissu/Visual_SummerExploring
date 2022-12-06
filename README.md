@@ -1,5 +1,5 @@
 # summer-exploring(SENAC)
-https://vinnyalmeidabr.github.io/summer-exploring/
+https://vinnyalmeidabr.github.io/Summer-Exploring_FINAL/
 Site single page - HTML, PHP, CSS e JS utilizando o BOOTSTRAP.
 
 # Summer-exploring 
