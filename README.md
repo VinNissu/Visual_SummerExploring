@@ -6,7 +6,7 @@ https://vinnyalmeidabr.github.io/Visual.SummerExploring/
 # Summer-exploring 
 Site Single page - HTML, CSS e JavaScript utilizando BOOTSTRAP 
 
-##DESAFIO 
+## DESAFIO 
 O desafio foi transformar em código um layout do site em imagem JPG <br>
 Veja a imagem: <br>
 
